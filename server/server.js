@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.static('public'))
 
 app.get('/', (req,res) => {
-    res.status(200).sendFile(path.join(__dirname, '../public/index.HTML'))
+    res.status(200).sendFile(path.join(__dirname, '../public/index.html'))
 })
 
 app.get('/css', (req,res) => {
